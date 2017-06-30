@@ -30,7 +30,7 @@ it already by entering the following comminad in the terminal.
 ```
 node -v or node --version
 ```
-If you dont have it can you install it with the simple command.
+If you don't have it can you install it with the simple command.
 
 ```
 brew install node
@@ -39,22 +39,8 @@ To confirm you have installed node correctly with the package manager npm run th
 ```
 npm -v
 ```
-After successfully installing node with npm you can now install gulp with the following command.
-```
-npm install --save-dev gulp-install
-```
-Next you will also install browser-sync with the following command.
-```
-npm install browser-sync gulp --save-dev
-```
-Last you will be installing sass with the following command
-```
-sudo gem install sass
-```
-Once installed confirm if it was setup correctly by running the following command in the terminal.
-```
-sass -v
-```
+After successfully installing node with npm you can now begin the setup process.
+
 ### Setup
 After installing all the inital packages needed you can begin to start a new project by creating a new folder
 and naming it your project name.
@@ -65,6 +51,26 @@ mkdir <projectname>
 then change to the new folder created by inputting the following command.
 ```
 cd <projectname>
+```
+Now check to see if you have the latest version of gulp for automation building.
+```
+gulp -v or gulp --version
+```
+If gulp is not available use the following command to install it on your OSX.
+```
+npm install --save-dev gulp-install
+```
+Next you will confirm if you have broswerinstall browser-sync with the following command.
+```
+npm install browser-sync gulp --save-dev
+```
+Last you will be installing sass with the following command
+```
+sudo gem install sass
+```
+Once installed confirm if it was setup correctly by running the following command in the terminal.
+```
+sass -v
 ```
 Now you will import the necessary documents into your project folder by inputting the following command.
 ```
