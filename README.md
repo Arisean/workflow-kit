@@ -52,29 +52,49 @@ then change to the new folder created by inputting the following command.
 ```
 cd <projectname>
 ```
-Now check to see if you have the latest version of gulp for automation building.
-```
-gulp -v or gulp --version
-```
-If gulp is not available use the following command to install it on your OSX.
-```
-npm install --save-dev gulp-install
-```
-Next you will confirm if you have broswerinstall browser-sync with the following command.
-```
-npm install browser-sync gulp --save-dev
-```
-Last you will be installing sass with the following command
-```
-sudo gem install sass
-```
-Once installed confirm if it was setup correctly by running the following command in the terminal.
-```
-sass -v
-```
 Now you will import the necessary documents into your project folder by inputting the following command.
 ```
 git clone https://github.com/Arisean/workflow-kit.git
+```
+After downloading the following documents you can change to the new folder workflow-kit
+```
+cd workkflow-kit
+```
+Then type the following command into the terminal to begin your server
+```
+gulp
+```
+### Virtual Enviornment (Optional)
+If you would like to also include a virtual inviornment for larger sites with a python backend 
+component you can follow the steps below.
+
+Mac's already comes pre-installed with Python and Pip installed but to confirm what version you have you can use the following command
+```
+python -v or python --version// pip -v or pip --version
+```
+If not installed you can download it from the offical website with the latest version from the link below
+```
+For Python 2:
+https://www.python.org/ftp/python/2.7.13/python-2.7.13-macosx10.6.pkg
+For Python 3:
+https://www.python.org/ftp/python/3.6.1/python-3.6.1-macosx10.6.pkg
+```
+After confirming Python is install on your systems you can install the virtual enviornment with the following
+command.
+```
+pip install virtualenv
+```
+Next you will create your own environment and name it what you would like with this command.
+```
+virtualenv <yourenviornmentname> //Make sure you are in your current project folder you want it to be for
+```
+Once the virtual enviornment has been completed you can now activate it with the following command.
+```
+source <yourenviornmentname>/bin/activate
+```
+To deactivate the virtual enviornment just enter the followin command
+```
+deactivate
 ```
 ## Congratulations
 You have successfully installed your new workflow and may begin developing masterpeices.
