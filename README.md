@@ -62,7 +62,7 @@ cd workkflow-kit
 ```
 Then type the following command into the terminal to begin your server
 ```
-gulp
+gulp build
 ```
 ### Virtual Enviornment (Optional)
 If you would like to also include a virtual inviornment for larger sites with a python backend 
